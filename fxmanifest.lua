@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'vehicle key management system'
 repository 'https://github.com/Qbox-project/qbx_vehiclekeys'
-version '1.0.0'
+version '1.0.1'
 
 ox_lib 'locale'
 
@@ -11,6 +11,7 @@ shared_scripts {
     '@ox_lib/init.lua',
     '@qbx_core/modules/lib.lua',
     'shared/types.lua',
+    'shared/vehicle-config.lua',
     'bridge/qb/shared.lua',
 }
 
@@ -33,7 +34,6 @@ server_scripts {
 }
 
 files {
-    'shared/functions.lua',
     'locales/*.json',
     'config/client.lua',
     'config/shared.lua'
